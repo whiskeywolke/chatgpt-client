@@ -29,31 +29,6 @@ def chat_gpt(text, api_key):
     response = requests.post(url, headers=headers, json=data)
 
     return response.json()
-    # time.sleep(2)
-    # return {
-    #     "id": "cmpl-6X81MgVGTMRPUo42znRLtIfYrxCD1",
-    #     "object": "text_completion",
-    #     "created": 1673353676,
-    #     "model": "text-davinci-003",
-    #     "choices": [
-    #         {
-    #             "text": "\n\nPeople can be deceived by fake news in social media websites because these websites "
-    #                     "allow anyone to post whatever they want without verification. Additionally, fake news can "
-    #                     "often be crafted in a way so that it looks believable and people are more likely to believe "
-    #                     "it if it reinforces their existing beliefs. Moreover, people may not have the knowledge or "
-    #                     "tools to properly vet the information they find online.",
-    #             "index": 0,
-    #             "logprobs": None,
-    #             "finish_reason": "stop"
-    #         }
-    #     ],
-    #     "usage": {
-    #         "prompt_tokens": 12,
-    #         "completion_tokens": 76,
-    #         "total_tokens": 88
-    #     },
-    #     "query": "Why are people deceived by fake news in social media websites?"
-    # }
 
 
 def string_with_linebreak(input_string):
